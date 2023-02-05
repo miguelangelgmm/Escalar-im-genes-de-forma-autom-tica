@@ -9,6 +9,7 @@ def resize_images(directory, size):
             if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png"):
                 #abrimos imágen, reescalamos y guardamos
                 image = Image.open(os.path.join(directory, filename))
+                #image.LANCZOS permite mejorar la calidad de imágen después de redimensionarla
                 image = image.resize(size, Image.LANCZOS)
                 image.save(os.path.join(directory, filename))
         except UnicodeEncodeError:
