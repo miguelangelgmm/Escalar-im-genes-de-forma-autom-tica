@@ -1,0 +1,1 @@
+# Escalar-im-genes-de-forma-autom-tica
